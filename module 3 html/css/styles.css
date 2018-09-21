@@ -1,0 +1,46 @@
+body {
+    background-color:white;
+    
+    
+}
+
+.width {
+    width: 373px;
+    text-align: left;
+}
+.widthred {
+    width: 373px;
+    text-align: left;
+    color: red;
+
+}
+.border-box {
+        box-sizing: border-box;
+        width: 450px;
+        height: 400;
+        margin: 0px;
+        padding: 50px;
+        display: inline-block;
+}
+
+a:hover {
+    color: blue;
+
+}
+
+
+    
+    
+
+ .center {
+     text-align: center;
+ }
+
+ .button {
+     height: 50px;
+     width: 150px;
+     background-color: white;
+     border-color: black;
+     border-width: 1px;
+    }
+ 
