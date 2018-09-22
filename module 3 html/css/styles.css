@@ -1,26 +1,44 @@
+
+ .horizontal {
+    DISPLAY : INLINE;
+    float: none;
+    text-align: center;
+    list-style: none;
+    padding: 0px;	
+    margin-left: 60px;	
+    text-transform: uppercase;
+    
+}
+
+.limit_img {
+    width: 373px;
+    height: 284px;
+}
+
 body {
     background-color:white;
     
     
 }
 
-.width {
+.limit {
     width: 373px;
     text-align: left;
 }
-.widthred {
+.limitred {
     width: 373px;
     text-align: left;
     color: red;
+    text-transform: uppercase;
 
 }
 .border-box {
-        box-sizing: border-box;
-        width: 450px;
-        height: 400;
-        margin: 0px;
-        padding: 50px;
-        display: inline-block;
+    box-sizing: border-box;
+    width: 450px;
+    height: 400;
+    margin: 0px;
+    padding: 50px;
+    display: inline-block;
 }
 
 a:hover {
