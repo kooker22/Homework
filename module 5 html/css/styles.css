@@ -128,7 +128,7 @@ section {
   right: 260px;
   bottom: 275px;
 }
-.main {
+main {
   width: auto;
   height: 678px;
   background-color: e9f0fd;
@@ -151,7 +151,7 @@ section {
   width: 164px;
   height: 7px;
   margin-top: 32px;
-  background-color: #ffffff;
+  background-color: #e9f0fd;
 }
 .caption:hover > .bottom-bar {
   background-color: #1abc9c;
