@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 1920px;
+}
+body {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+header {
+  padding-top: 32px;
+}
+a {
+  text-decoration: none;
+  /* color: #95e1d3; */
+}
+.li {
+  display: inline-flex;
+
+  width: 690px;
+  justify-content: space-between;
+
+  list-style: none;
+  font-family: montserrat-regular;
+}
+ul {
+  color: #95e1d3;
+  max-height: 20px;
+}
+.logo {
+  display: inline-block;
+  font-family: montserrat-bold;
+  font-size: 30px;
+  width: 500px;
+  color: #95e1d3;
+}
+
+.head-item:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #f38181;
+  margin: 13px auto;
+  color: #f38181;
+}
+
+.kaush-font {
+  font-family: kaushan-script-regular;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+}
+.monser-font {
+  font-family: monsterrat-bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.caption {
+  height: 308px;
+  padding-top: 130px;
+}
+/* .caption::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60px;
+  background: #f38181;
+  margin: 46px auto 0 auto;
+} */
+nav {
+  height: 245px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.links1,
+.links2,
+.links3,
+.links4,
+.links5,
+.links6 {
+  position: relative;
+  height: 90px;
+  width: 383px;
+  margin-bottom: 83px;
+}
+
+.icon {
+  position: absolute;
+  height: 88px;
+  width: 83px;
+  top: 0;
+  left: 0;
+}
+.p1 {
+  position: absolute;
+  text-align: left;
+  top: 0;
+  left: 83px;
+  font-family: montserrat-regular;
+  text-transform: uppercase;
+}
+.p2 {
+  position: absolute;
+  height: 56px;
+  width: 300px;
+  text-align: left;
+  top: 33px;
+  left: 83px;
+  font-family: roboto-regular;
+  font-size: 15px;
+  color: #999999;
+}
+.bar::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60px;
+  background: #f38181;
+  margin: 46px auto 0 auto;
+}
+.text {
+  padding-top: 50px;
+  text-align: center;
+  font-family: roboto;
+  color: #999999;
+  line-height: 25px;
+  font-size: 15px;
+
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url(../fonts/roboto-regular.ttf);
+}
+@font-face {
+  font-family: kaushan-script-regular;
+  src: url(../fonts/kaushan-script-regular.ttf);
+}
+@font-face {
+  font-family: montserrat-bold;
+  src: url(../fonts/montserrat-bold.ttf);
+}
+@font-face {
+  font-family: montserrat-regular;
+  src: url(../fonts/montserrat-regular.ttf);
+}

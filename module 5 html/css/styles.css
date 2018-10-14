@@ -1,19 +1,20 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-html {
-  background: #282828;
-}
+
 body {
-  margin-left: auto;
-  margin-right: auto;
+   margin-left: auto;
+  margin-right: auto; 
   width: 1600px;
+  
 }
 header {
   height: 40px;
   width: 100%;
   padding-top: 20px;
+  padding-bottom: 40px;
   background-color: #ffffff;
   border: 0;
 }
@@ -32,7 +33,6 @@ header {
   margin-left: 13px;
   margin-right: 13px;
   text-align: right;
-  float: none;
   font-weight: bold;
   font-size: 10px;
 }
@@ -54,7 +54,6 @@ a {
 .let {
   margin-left: 245px;
   width: 500px;
-  height: 1px;
   display: inline-block;
   text-transform: uppercase;
   font-size: 21px;
@@ -67,7 +66,7 @@ a {
 
 section {
   position: relative;
-  width: auto;
+ 
   height: 600px;
 }
 
@@ -75,19 +74,13 @@ section {
   text-align: center;
 }
 
-.ground {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-}
+
 
 .carusel-content {
   position: absolute;
   height: 100px;
   width: 760px;
-  top: 220px;
+  
   bottom: 285px;
   right: 420;
   left: 420px;
@@ -105,7 +98,14 @@ section {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.tours-carusel {
+  position: relative;
+  margin: auto;
+  
+ 
+  
+  
+}
 .button_carusel {
   width: 105px;
   height: 105px;
@@ -120,7 +120,7 @@ section {
   position: absolute;
   top: 225px;
   left: 245px;
-  bottom: 275px;
+  /* bottom: 275px; */
 }
 .right {
   position: absolute;
@@ -131,10 +131,10 @@ section {
 main {
   width: auto;
   height: 678px;
-  background-color: e9f0fd;
+  background-color: #e9f0fd;
 }
 .caption {
-  position: relative;
+  
   text-align: center;
   height: 254px;
   font-size: 37px;
@@ -145,13 +145,13 @@ main {
 
   padding-top: 113px;
 }
-.bottom-bar {
-  position: absolute;
-  left: 720px;
-  width: 164px;
+.caption::after {
+  content: "";
+  display: block;
+  width: 165px;
   height: 7px;
-  margin-top: 32px;
-  background-color: #e9f0fd;
+  margin: 10px auto;
+  background: #1abc9c;
 }
 .caption:hover > .bottom-bar {
   background-color: #1abc9c;
@@ -165,6 +165,7 @@ main {
   text-transform: uppercase;
   font-weight: bold;
   overflow: hidden;
+  
 }
 .order:hover > .wrap {
   background-image: linear-gradient(to right, #1abc9c 79%, #7fd9c7 21%);
@@ -207,12 +208,7 @@ p {
 .clearfix {
   clear: both;
 }
-.right-marg {
-  margin-right: 187px;
-}
-.left-marg {
-  margin-left: 187px;
-}
+
 .small-btn {
   height: 50px;
   width: 50px;
@@ -241,7 +237,7 @@ p {
   opacity: 1;
 }
 .card {
-  position: relative;
+  /* position: relative; */
   width: 255px;
   height: 325px;
 }
@@ -261,9 +257,7 @@ p {
   background: rgba(0, 0, 0, 1);
   opacity: 0;
 }
-.left-card-pos {
-  left: 5px;
-}
+
 footer {
   height: 88px;
   width: 100%;
@@ -273,7 +267,7 @@ footer {
   text-align: center;
   color: #fefefe;
   font-family: sans-serif;
-  margin-top: 90px;
+  
   padding: 30px;
 }
 .clr {
@@ -297,6 +291,8 @@ footer {
   margin: 0;
   padding: 0;
   background-color: #e9f0fd;
+  padding-left: 172px;
+  padding-right: 172px;
 }
 
 .card-list {
