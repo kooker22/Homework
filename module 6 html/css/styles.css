@@ -16,9 +16,9 @@ header {
 }
 a {
   text-decoration: none;
-  /* color: #95e1d3; */
 }
-.li {
+
+.li-item {
   display: inline-flex;
 
   width: 690px;
@@ -28,7 +28,6 @@ a {
   font-family: montserrat-regular;
 }
 ul {
-  color: #95e1d3;
   max-height: 20px;
 }
 .logo {
@@ -38,7 +37,15 @@ ul {
   width: 500px;
   color: #95e1d3;
 }
-
+.head-item::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: #f38181;
+  margin: 13px auto;
+  transition: width 200ms;
+}
 
 .head-item:hover::after {
   content: "";
@@ -167,7 +174,7 @@ nav {
 .card:hover .card-inner {
   transition-property: #f2d787;
   transition-duration: 200ms;
-  
+
   opacity: 0.9;
   z-index: 2;
   box-shadow: 10px 10px #95e1d3;
@@ -198,23 +205,19 @@ nav {
   text-align: center;
   width: 380px;
 }
-  footer {
-    height: 65px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+footer {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 figcaption {
   padding-top: 30px;
 }
 .subscribe {
- 
   display: flex;
   align-self: center;
   opacity: 0.9;
-  
-  
-  
 }
 .txt-area {
   width: 230px;
@@ -222,18 +225,20 @@ figcaption {
   line-height: 38px;
   font-family: roboto-lightitalic;
   font-size: 14px;
-  
+
   border-width: 1px;
-  border-color: #cccccc;
-  
- 
+  border-color: #e7e7e7;
 }
 .btn {
   height: 38px;
   width: 150px;
-  background:  #95e1d3;
+  background: #95e1d3;
   border: none;
   border-color: #95e1d3;
+  font-family: montserrat-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #d7f4ee;
 }
 .wrapper {
   width: 637px;
@@ -247,6 +252,19 @@ figcaption {
   text-align: center;
   line-height: 100%;
   align-self: center;
+  font-family: montserrat-regular;
+  font-size: 14px;
+  color: #595959;
+}
+.ftr-autor::before {
+  content: "\00A9";
+}
+::-webkit-input-placeholder {
+  color: #d6d6d6;
+  font-size: 15px;
+  font-family: roboto-lightitalic;
+  font-style: oblique;
+  padding-left: 10px;
 }
 @font-face {
   font-family: roboto-lightitalic;
