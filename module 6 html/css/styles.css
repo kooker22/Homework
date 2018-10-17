@@ -5,6 +5,7 @@
 }
 html {
   width: 1920px;
+  
 }
 body {
   width: 1200px;
@@ -36,7 +37,9 @@ ul {
   font-size: 30px;
   width: 500px;
   color: #95e1d3;
+  
 }
+
 .head-item::after {
   content: "";
   display: block;
@@ -138,7 +141,7 @@ nav {
 .txt {
   padding-top: 50px;
   text-align: center;
-  font-family: roboto;
+  font-family: roboto-regular;
   color: #999999;
   line-height: 25px;
   font-size: 15px;

@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 1400px;
+}
+.logo {
+  width: 45%;
+  display: inline-block;
+  height: auto;
+  font-family: rochester;
+  font-size: 26px;
+  color: #fed136;
+}
+
+.head-list {
+  height: 15px;
+  width: 54%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.lnk {
+  text-decoration: none;
+  font-family: montserrat;
+  text-transform: uppercase;
+  color: #5d5d5d;
+  font-weight: bold;
+}
+.lnk:hover {
+  color: #fed136;
+}
+.caption {
+  height: 243px;
+  padding-top: 128px;
+}
+.h2-1 {
+  font-size: 40px;
+  font-family: montserrat-bold;
+  color: #222222;
+  text-transform: uppercase;
+  text-align: center;
+}
+.sub-title1 {
+  font-family: amaranth-italic;
+  color: #777777;
+  font-style: oblique;
+  text-align: center;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  position: relative;
+  width: 235px;
+  height: 400px;
+  padding-top: 12%;
+}
+.circle {
+  position: absolute;
+  top: 3em;
+  left: 5em;
+  width: 72px;
+  height: 72px;
+  border: 4px solid #fed136;
+  border-radius: 50%;
+  margin-bottom: 20px;
+
+}
+.sub-circle-name {
+    font-family: montserrat-bold;
+    font-size: 18px;
+    color: #222222;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.circle-txt {
+    font-family: robotoslab-reg;
+    color: #777777;
+    font-size: 14px;
+    text-align: center;
+    line-height: 23px;
+}
+.message {
+  position: relative;
+  
+  height: 675px;
+  background: #222222;
+}
+.map {
+  position: absolute;
+}
+.caption2 {
+  position: absolute;
+  left: 34.7em;
+  top: 7em;
+}
+.h2-2 {
+  
+  font-size: 40px;
+  font-family: montserrat-bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.sub-title2 {
+  
+  font-family: amaranth-italic;
+  color: #777777;
+  font-style: oblique;
+  text-align: center;
+}
+.form-client {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  height: 260px;
+  top: 20em;
+  left: 15em;
+  
+  
+}
+.input-lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 455px;
+  height: 225px;
+  
+}
+.ln-size {
+  width: 455px;
+  height: 50px;
+  
+  font-size: 14px;
+  
+  
+  color: #000000;
+  font-size: 20px;
+
+}
+::placeholder {
+  font-family: montserrat-bold;
+  font-size: 14px;
+  color: #bbbbbb;
+  text-transform: uppercase;
+  padding-top: 21px;
+  padding-left: 21px;
+}
+textarea {
+  width: 455px;
+  height: 225px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  top: 587px;
+  left: 577px;
+  height: 68px;
+  width: 245px;
+  background: #fed136;
+  font-family: montserrat-bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+
+@font-face {
+    font-family: robotoslab-reg;
+    src: url(roboto-slab-v7-latin-regular.woff2);
+}
+@font-face {
+  font-family: amaranth-italic;
+  src: url(../fonts/amaranth-v8-latin-italic.woff2);
+}
+@font-face {
+  font-family: montserrat-bold;
+  src: url(../fonts/montserrat-v12-latin-900.woff2);
+}
+@font-face {
+  font-family: rochester;
+  src: url(../fonts/rochester-v8-latin-regular.woff2);
+}
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/montserrat-v12-latin-regular.woff2);
+}
