@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  margin: 0 auto;
+}
 
 body {
   margin: 0 auto;
@@ -95,6 +98,7 @@ section {
     text-align: center;
 }
 .card-description {
+  
     font-family: robotoslab;
     font-weight: 400;
     color: #777777;
@@ -170,10 +174,13 @@ form {
   text-transform: uppercase;
   padding-top: 21px;
   padding-left: 21px;
+  text-align: start;
+  
 }
-textarea {
+.comment {
   width: 455px;
   height: 225px;
+
 }
 .btn {
   display: flex;
@@ -193,11 +200,16 @@ textarea {
   border-radius: 5px;
 }
 
-
+input:valid {
+  border: 3px solid green;
+}
+input:invalid {
+  border: 3px solid red;
+}
 
 @font-face {
     font-family: robotoslab;
-    src: url(../roboto/roboto-slab-v7-latin-regular.woff2);
+    src: url(../fonts/roboto/roboto-slab-v7-latin-regular.woff2);
     font-weight: 400;
 }
 @font-face {
