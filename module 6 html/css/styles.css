@@ -19,28 +19,33 @@ a {
   text-decoration: none;
 }
 
-.li-item {
+.menu-header {
   display: inline-flex;
 
   width: 690px;
   justify-content: space-between;
 
   list-style: none;
-  font-family: montserrat-regular;
+  font-family: montserrat;
+  font-weight: 400;
 }
 ul {
   max-height: 20px;
 }
 .logo {
   display: inline-block;
-  font-family: montserrat-bold;
+  font-family: montserrat;
+  font-weight: 900;
   font-size: 30px;
   width: 500px;
-  color: #95e1d3;
+ 
   
 }
+.logo-link {
+  color: #95e1d3;
+}
 
-.head-item::after {
+.menu-item::after {
   content: "";
   display: block;
   width: 0%;
@@ -50,7 +55,7 @@ ul {
   transition: width 200ms;
 }
 
-.head-item:hover::after {
+.menu-item:hover::after {
   content: "";
   display: block;
   width: 100%;
@@ -60,14 +65,21 @@ ul {
   color: #f38181;
   transition: width 200ms linear;
 }
+.menu-link {
+  color: #95e1d3;
+}
+.menu-link:hover {
+  color: #f38181;
+}
 
-.kaush-font {
-  font-family: kaushan-script-regular;
+.sub-title {
+  font-family: kaushan;
+  font-weight: 400;
   font-size: 24px;
   color: #333333;
   text-align: center;
 }
-.monser-font {
+.title {
   font-family: monsterrat-bold;
   font-size: 30px;
   text-transform: uppercase;
@@ -75,7 +87,7 @@ ul {
   text-align: center;
 }
 .caption {
-  height: 438px;
+  height: 318px;
   padding-top: 130px;
 }
 
@@ -90,12 +102,7 @@ nav {
   align-self: flex-end;
 }
 
-.links1,
-.links2,
-.links3,
-.links4,
-.links5,
-.links6 {
+.card {
   position: relative;
   height: auto;
   width: 383px;
@@ -104,29 +111,31 @@ nav {
   min-height: 123px;
 }
 
-.icon {
+.card-icon {
   position: absolute;
   height: 88px;
   width: 83px;
   top: 0;
   left: 0;
 }
-.p1 {
+.card-title {
   position: absolute;
   text-align: left;
   top: 0;
   left: 83px;
-  font-family: montserrat-regular;
+  font-family: montserrat;
+  font-weight: 400;
   text-transform: uppercase;
 }
-.p2 {
+.card-description {
   position: absolute;
   height: 56px;
   width: 300px;
   text-align: left;
   top: 33px;
   left: 83px;
-  font-family: roboto-regular;
+  font-family: roboto;
+  font-weight: 400;
   font-size: 15px;
   color: #999999;
 }
@@ -141,7 +150,8 @@ nav {
 .txt {
   padding-top: 50px;
   text-align: center;
-  font-family: roboto-regular;
+  font-family: roboto;
+  font-weight: 400;
   color: #999999;
   line-height: 25px;
   font-size: 15px;
@@ -151,14 +161,15 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 120px;
 }
-.card {
+.card2 {
   position: relative;
   opacity: 1;
   width: 380px;
   height: 470px;
 }
-.card-inner {
+.card2-inner {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -174,7 +185,7 @@ nav {
 .img-center {
   position: absolute;
 }
-.card:hover .card-inner {
+.card2:hover .card2-inner {
   transition-property: #f2d787;
   transition-duration: 200ms;
 
@@ -195,7 +206,8 @@ nav {
 .name {
   display: block;
   font-size: 14px;
-  font-family: montserrat-regular;
+  font-family: montserrat;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   width: 380px;
@@ -203,7 +215,8 @@ nav {
 .prof {
   display: block;
   font-size: 15px;
-  font-family: roboto-regular;
+  font-family: roboto;
+  font-weight: 400;
   color: #9f9f9f;
   text-align: center;
   width: 380px;
@@ -217,8 +230,10 @@ footer {
 figcaption {
   padding-top: 30px;
 }
-.subscribe {
+.form {
   display: flex;
+  width: 380px;
+  
   align-self: center;
   opacity: 0.9;
 }
@@ -226,9 +241,9 @@ figcaption {
   width: 230px;
   height: 38px;
   line-height: 38px;
-  font-family: roboto-lightitalic;
+  font-family: roboto;
+  font-weight: 200;
   font-size: 14px;
-
   border-width: 1px;
   border-color: #e7e7e7;
 }
@@ -236,12 +251,13 @@ figcaption {
   height: 38px;
   width: 150px;
   background: #95e1d3;
-  border: none;
   border-color: #95e1d3;
-  font-family: montserrat-bold;
+  font-family: montserrat;
+  font-weight: 900;
   font-size: 14px;
   text-transform: uppercase;
   color: #d7f4ee;
+  border: none;
 }
 .wrapper {
   width: 637px;
@@ -255,7 +271,8 @@ figcaption {
   text-align: center;
   line-height: 100%;
   align-self: center;
-  font-family: montserrat-regular;
+  font-family: montserrat;
+  font-weight: 400;
   font-size: 14px;
   color: #595959;
 }
@@ -265,27 +282,33 @@ figcaption {
 ::-webkit-input-placeholder {
   color: #d6d6d6;
   font-size: 15px;
-  font-family: roboto-lightitalic;
+  font-family: roboto;
+  font-weight: 200;
   font-style: oblique;
   padding-left: 10px;
 }
 @font-face {
-  font-family: roboto-lightitalic;
-  src: url(../fonts/roboto-lightitalic);
+  font-family: roboto;
+  src: url(../fonts/roboto/roboto-lightitalic.ttf);
+  font-weight: 200;
 }
 @font-face {
-  font-family: roboto-regular;
-  src: url(../fonts/roboto-regular.ttf);
+  font-family: roboto;
+  src: url(../fonts/roboto/roboto-regular.ttf);
+  font-weight: 400;
 }
 @font-face {
-  font-family: kaushan-script-regular;
-  src: url(../fonts/kaushan-script-regular.ttf);
+  font-family: kaushan;
+  src: url(../fonts/kaushan/kaushan-script-regular.ttf);
+  font-weight: 400;
 }
 @font-face {
-  font-family: montserrat-bold;
-  src: url(../fonts/montserrat-bold.ttf);
+  font-family: montserrat;
+  src: url(../fonts/montserrat/montserrat-bold.ttf);
+  font-weight: 900;
 }
 @font-face {
-  font-family: montserrat-regular;
-  src: url(../fonts/montserrat-regular.ttf);
+  font-family: montserrat;
+  src: url(../fonts/montserrat/montserrat-regular.ttf);
+  font-weight: 400;
 }
