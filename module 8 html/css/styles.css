@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1440px;
+    min-width: 320px;
+} 
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    
+    background: url(../img/backgroun_desctop.png) no-repeat ;
+    height: 540px;
+    outline: hidden;
+    
+    
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    min-width: 320px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.logo {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-family: montserrat;
+    font-weight: 900;
+}
+
+button {
+    
+    border-radius: 30px;
+    border: none;
+    
+    
+    font-size: 14px;
+    font-family: montserrat;
+    font-weight: 900;
+    
+} 
+
+.head-button {
+    background: none;
+    color: #ffffff;
+    width: 90px;
+    height: 36px;
+
+}
+button::first-letter {
+    text-transform: uppercase;
+}
+button, button:active, button:focus {
+    outline: none;
+}
+button:active, button:hover {
+    border: 2px solid #ffffff;
+}
+h1 {
+    font-size: 1.875rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: montserrat;
+    font-weight: 900;
+}
+.find_partner {
+    font-family: roboto;
+    font-weight: 200;
+    font-size: 1.125rem;
+}
+section {
+    text-align: center;
+    height: 175px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+.search_btn {
+    width: 280px;
+    height: 40px;
+}
+.caption {
+    padding-top: 4.44rem;
+    margin-bottom: 1.31rem;
+    font-family: montserrat;
+    font-weight: 900;
+    line-height: 1em;
+    
+}
+.partners {
+    text-align: center;
+}
+.card {
+    margin-bottom: 1.875rem;
+}
+.card-photo {
+    width: 120px;
+    height: 120px;
+    border:none;
+    border-radius: 50%;
+    
+    margin-bottom: 1.31rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    
+    
+}
+.card-title {
+    padding-top: 1.5rem;
+    margin-bottom: 1.21rem;
+    font-family: montserrat;
+    font-weight: 900;
+    color: #333333;
+}
+.card-desription {
+    font-family: roboto;
+    font-weight: 200;
+    font-size: 14px;
+    color: #8f8f8f;
+}
+.card-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #ffffff;
+
+    
+}
+.icon1 {
+    background: url(../img/icon_tv.png) no-repeat;
+    background-color: #ff4e50;
+}
+.icon2 {
+    background: url(../img/icon_bottle.png) no-repeat;
+    background-color: #ffa507;
+}
+.icon3 {
+    background: url(../img/icon_cup.png) no-repeat;
+    background-color: #1cd7ad;
+}
+.icon4 {
+    background: url(../img/icon_plane.png) no-repeat;
+    background-color: #4e73db;
+
+}
+.photo1 {
+    background: url(../img/bradley_hunter.png);
+}
+.photo2 {
+    background: url(../img/lucas_marsha.png);
+}
+.photo3 {
+    background: url(../img/heather_walker.png);
+}
+.photo4 {
+    background: url(../img/rita_hummer.png);
+}
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat/montserrat-v12-latin-900.woff2);
+    font-weight: 900;
+}
+@font-face  {
+    font-family: roboto;
+    src: url(../fonts/roboto/Roboto-Light.woff2);
+    font-weight: 200;
+}
