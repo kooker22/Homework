@@ -94,7 +94,6 @@ h1 {
   text-transform: uppercase;
   font-family: myriadpro;
   font-weight: 900;
-  line-height: 40px;
 }
 .find_partner {
   font-family: roboto;
@@ -304,5 +303,9 @@ section {
   .card-desription {
     width: 95%;
     margin: auto;
+  }
+  .find_partner {
+    margin-bottom: 2.5rem;
+    padding-top: 2.75rem;
   }
 }
