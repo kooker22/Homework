@@ -22,6 +22,7 @@
   width: 100%;
   text-align: center;
   background: url(../img/background.png) no-repeat;
+  background-position: 50% 0px;
 }
 
 header {
@@ -37,13 +38,21 @@ header {
 }
 .logo {
   margin: 0 auto;
-  text-transform: uppercase;
+  
+  display: flex;
+  order: 2;
+}
+.logo-link {
+    text-decoration: none;
+    text-transform: uppercase;
   font-size: 1.25rem;
   color: #ffffff;
   font-family: montserrat;
   font-weight: 900;
-  display: flex;
-  order: 2;
+}
+.logo-link:active {
+color: #bfa022;
+text-shadow: 0 0 3px #bfa022;
 }
 .head-buttons {
   display: flex;
@@ -72,7 +81,10 @@ button:active,
 button:focus {
   outline: none;
 }
-button:active,
+button:active {
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px 3px #ffffff;
+}
 button:hover {
   border: 2px solid #ffffff;
 }
@@ -116,6 +128,7 @@ section {
   border: none;
 }
 .caption {
+   display: block;
   text-align: center;
   padding-top: 4.44rem;
   margin-bottom: 1.31rem;
@@ -157,6 +170,7 @@ section {
   font-family: montserrat;
   font-weight: 900;
   color: #333333;
+  width: 
 }
 .card-desription {
   font-family: roboto;
@@ -195,9 +209,16 @@ section {
   height: 40px;
   width: 180px;
   background: #ffffff;
-  margin: auto;
+  margin: 0 auto 20px auto;
 }
-.more::first-letter {
+.more:active  {
+    box-shadow: 0 0 10px 3px #ff4e50;
+
+}
+ .more:hover {
+    border: 2px solid #ff4e50;
+}
+.more::first-letter  {
   text-transform: uppercase;
 }
 
@@ -216,9 +237,7 @@ section {
   src: url(../fonts/myriadpro/MyriadProRegular.woff2);
   font-weight: 400;
 }
-.container {
-  width: 65.277%;
-}
+
 
 @media (min-width: 320px) {
     .wrapper {
@@ -230,10 +249,21 @@ section {
   }
   .logo {
     order: 1;
-    margin: 0;
+    
+    margin-left: 6.510%;
+    padding-top: 3.437rem;
+  }
+  .head-buttons {
+
+    margin-right: 6.510%;
+    padding-top: 3.125rem;
+
   }
   .top {
+    max-width:100%;
+    height:auto;
     background: url(../img/background_tablet.png) no-repeat;
+    background-position: 50%;
   }
   .partners {
     flex-direction: row;
@@ -243,20 +273,28 @@ section {
   .card {
     width: 50%;
   }
-  
+  .card-desription {
+      width: 59.114%;
+      margin: auto;
+  }
 }
 @media (min-width: 768px) {
   .logo {
     order: 1;
     margin-left: 17.361%;
+    padding-top: 3.565rem;
   }
   .top {
     background: url(../img/background_desktop.png) no-repeat;
+    background-position: 50% ;
+    
   }
   .head-buttons {
     margin-right: 17.361%;
+    padding-top: 3.565rem;
   }
   .partners {
+      
     width: 65.277%;
   }
   .caption {
@@ -264,9 +302,15 @@ section {
     position: absolute;
     right: 0;
     left: 0;
-    margin: 0 auto;
+    margin: auto;
+    
   }
   .card {
     width: 25%;
+    justify-content: space-between;
   }
+  .card-desription {
+    width: 95%;
+    margin: auto;
+}
 }
