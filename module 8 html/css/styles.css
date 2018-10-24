@@ -12,7 +12,7 @@
 
   margin-right: auto;
   margin-left: auto;
-  width: 1440px;
+  
   min-width: 320px;
 }
 .top {
@@ -23,6 +23,7 @@
   bottom: 0;
   margin: auto;
   width: 100%;
+  text-align: center;
   /* background: url(../img/background.png) no-repeat ; */
 }
 .background {
