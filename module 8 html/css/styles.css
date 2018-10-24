@@ -6,13 +6,10 @@
 
 .wrapper {
   position: relative;
-
   width: 100%;
   height: 540px;
-
   margin-right: auto;
   margin-left: auto;
-  
   min-width: 320px;
 }
 .top {
@@ -24,41 +21,41 @@
   margin: auto;
   width: 100%;
   text-align: center;
-  /* background: url(../img/background.png) no-repeat ; */
-}
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-    min-width: 320px;
-    
 }
 
+
+
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
-  width: 100%;
-  min-width: 320px;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0;
   margin: auto;
+  height: 156px;
+  
+  
 }
 .logo {
+    margin: 0 auto;
   text-transform: uppercase;
   font-size: 1.25rem;
   color: #ffffff;
   font-family: montserrat;
   font-weight: 900;
+  display: flex;
+  order: 2;
 }
-
+.head-buttons {
+  display: flex;
+  order: 1;
+  margin: 0 auto;
+}
 button {
   border-radius: 30px;
   border: none;
-
   font-size: 14px;
   font-family: montserrat;
   font-weight: 900;
@@ -98,7 +95,7 @@ h1 {
   margin-bottom: 1.25rem;
 }
 section {
-  text-align: center;
+  /* text-align: center; */
   height: 175px;
   position: absolute;
   top: 0;
@@ -122,6 +119,8 @@ section {
   border: none;
 }
 .caption {
+  display: flex;
+  flex-direction: column;
   padding-top: 4.44rem;
   margin-bottom: 1.31rem;
   font-family: montserrat;
@@ -136,7 +135,6 @@ section {
   left: 0;
   bottom: 0;
   margin: auto;
-
 }
 .card {
   margin-bottom: 1.875rem;
