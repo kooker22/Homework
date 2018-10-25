@@ -27,7 +27,7 @@ body {
 
 
 .menu-head {
-  height: 15px;
+  min-height: 20px;
   width: 54%;
   display: inline-flex;
   flex-direction: row;
@@ -41,6 +41,7 @@ body {
   text-transform: uppercase;
   color: #5d5d5d;
   font-weight: bold;
+  font-size: 14px;
 }
 .menu-link:hover {
   color: #fed136;
@@ -163,7 +164,7 @@ form {
   
   
   color: #000000;
-  font-size: 20px;
+  font-size: 2rem;
 
 }
 ::placeholder {
@@ -180,6 +181,7 @@ form {
 .comment {
   width: 455px;
   height: 225px;
+  font-size: 1.5rem;
 
 }
 .btn {
@@ -200,10 +202,10 @@ form {
   border-radius: 5px;
 }
 
-input:valid {
+input:focus:valid {
   border: 3px solid green;
 }
-input:invalid {
+input:focus:invalid {
   border: 3px solid red;
 }
 
