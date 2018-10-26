@@ -236,7 +236,7 @@ section {
   font-weight: 400;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 321px) {
   .wrapper {
     height: 700px;
   }
@@ -273,7 +273,7 @@ section {
     margin: auto;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .logo {
     order: 1;
     margin-left: 17.361%;
@@ -308,5 +308,27 @@ section {
   .find_partner {
     margin-bottom: 2.5rem;
     padding-top: 2.75rem;
+  }
+}
+@media (min-width: 321px) and (max-width: 360px)  {
+  .logo-link {
+    font-size: 1.1rem;
+
+  }.logo {
+   
+
+    margin-left: 6.51%;
+    padding-top: 3.437rem;
+  }
+  .head-buttons {
+    margin-right: 6.51%;
+    padding-top: 3.05rem;
+    
+  }
+  .head-button {
+    background: none;
+    color: #ffffff;
+    width: 78px;
+    height: 36px;
   }
 }
