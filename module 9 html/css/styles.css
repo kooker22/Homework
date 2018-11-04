@@ -11,18 +11,17 @@
   height: 540px;
   padding: 0;
   margin: 0;
-text-align: center;
+  text-align: center;
   position: relative;
 }
 header {
-  
   height: 37.03%;
   padding-top: 20px;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  
+
   margin: auto;
 }
 .centre {
@@ -46,7 +45,6 @@ header {
   text-shadow: 0 0 3px #bfa022;
 }
 .head-buttons {
-  
   margin: 0 auto;
   padding-bottom: 80px;
 }
@@ -81,21 +79,18 @@ button:hover {
 }
 section {
   position: absolute;
-flex-direction: column;
+  flex-direction: column;
   right: 0;
   left: 0;
   top: 0;
   margin: auto;
   max-width: 320px;
-  
 }
-
 
 .card {
   max-width: 225px;
   max-height: 270px;
   margin-bottom: 1.875rem;
-  
 }
 h1 {
   font-size: 1.875rem;
@@ -107,7 +102,6 @@ h1 {
   text-align: center;
   max-width: 280px;
   margin: auto;
-  
 }
 .partners {
   max-width: 1440px;
@@ -233,22 +227,18 @@ h1 {
   src: url(../fonts/myriadpro/MyriadProRegular.woff2);
   font-weight: 400;
 }
-@media (min-width:320px) {
-  .top{
-  background: url(../img/background_tablet.png) no-repeat;
-  background-position: center;
-  height: 700px;
+@media (min-width: 320px) {
+  .top {
+    background: url(../img/background_tablet.png) no-repeat;
+    background-position: center;
+    height: 700px;
   }
- 
 }
-@media (min-width:768px){
+@media (min-width: 768px) {
   .top {
     background: url(../img/background_desktop.png) no-repeat;
     background-position: center;
     height: 700px;
   }
-  /* .logo-link {
-    padding-right: 37.65%;
-  }  */
-  
+ 
 }
