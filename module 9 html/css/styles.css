@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.top {
+  background: url(../img/background.png) no-repeat;
+  background-position: center;
+  height: 540px;
+  padding: 0;
+  margin: 0;
+text-align: center;
+  position: relative;
+}
+header {
+  
+  height: 37.03%;
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  
+  margin: auto;
+}
+.centre {
+  text-align: center;
+}
+.logo {
+  margin: 0 auto;
+  color: #ffffff;
+  padding-top: 5px;
+}
+.logo-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-family: montserrat;
+  font-weight: 900;
+}
+.logo-link:active {
+  color: #bfa022;
+  text-shadow: 0 0 3px #bfa022;
+}
+.head-buttons {
+  
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+button {
+  border-radius: 30px;
+  border: none;
+  font-size: 14px;
+  font-family: montserrat;
+  font-weight: 900;
+}
+
+.head-button {
+  background: none;
+  color: #ffffff;
+  width: 80px;
+  height: 36px;
+}
+button::first-letter {
+  text-transform: uppercase;
+}
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+button:active {
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px 3px #ffffff;
+}
+button:hover {
+  border: 2px solid #ffffff;
+}
+section {
+  position: absolute;
+flex-direction: column;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
+  max-width: 320px;
+  
+}
+.caption {
+  
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card {
+  max-width: 225px;
+  max-height: 270px;
+  margin-bottom: 1.875rem;
+  
+}
+h1 {
+  font-size: 1.875rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: myriadpro;
+  font-weight: 900;
+  max-width: 320px;
+  text-align: center;
+  max-width: 280px;
+  margin: auto;
+  
+}
+.partners {
+  max-width: 1440px;
+}
+
+.find_partner {
+  font-family: roboto;
+  font-weight: 200;
+  font-size: 1.125rem;
+  color: #e7d4c6;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+.search_btn {
+  width: 280px;
+  height: 40px;
+  background: #ff4e50;
+  border: none;
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+.search_btn:active,
+.search_btn:hover,
+.search_btn:focus {
+  border: none;
+}
+.caption {
+  display: block;
+  text-align: center;
+  padding-top: 4.44rem;
+  margin-bottom: 1.31rem;
+  font-family: montserrat;
+  font-weight: 900;
+  font-size: 1.375rem;
+}
+.card-photo {
+  width: 120px;
+  height: 120px;
+  border: none;
+  border-radius: 50%;
+
+  margin-bottom: 1.31rem;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+.card-title {
+  padding-top: 1.5rem;
+  margin-bottom: 1.21rem;
+  font-family: montserrat;
+  font-weight: 900;
+  color: #333333;
+}
+.card-desription {
+  font-family: roboto;
+  font-weight: 200;
+  font-size: 14px;
+  color: #8f8f8f;
+  max-width: 225px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.card-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #ffffff;
+}
+.icon1 {
+  background: url(../img/icon_tv.png) no-repeat;
+  background-color: #ff4e50;
+}
+.icon2 {
+  background: url(../img/icon_bottle.png) no-repeat;
+  background-color: #ffa507;
+}
+.icon3 {
+  background: url(../img/icon_cup.png) no-repeat;
+  background-color: #1cd7ad;
+}
+.icon4 {
+  background: url(../img/icon_plane.png) no-repeat;
+  background-color: #4e73db;
+}
+.more {
+  border: 2px solid #ff4e50;
+  color: #ff4e50;
+  height: 40px;
+  width: 180px;
+  background: #ffffff;
+  margin: 20px auto 20px auto;
+}
+.more:active {
+  box-shadow: 0 0 10px 3px #ff4e50;
+}
+.more:hover {
+  border: 2px solid #ff4e50;
+}
+.more::first-letter {
+  text-transform: uppercase;
+}
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/montserrat/montserrat-v12-latin-900.woff2);
+  font-weight: 900;
+}
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/roboto/Roboto-Light.woff2);
+  font-weight: 200;
+}
+@font-face {
+  font-family: myriadpro;
+  src: url(../fonts/myriadpro/MyriadProRegular.woff2);
+  font-weight: 400;
+}
+@media (min-width:320px) {
+  .top{
+  background: url(../img/background_tablet.png) no-repeat;
+  background-position: center;
+  height: 700px;
+  }
+ 
+}
+@media (min-width:768px){
+  .top {
+    background: url(../img/background_desktop.png) no-repeat;
+    background-position: center;
+    height: 700px;
+  }
+  /* .logo-link {
+    padding-right: 37.65%;
+  }  */
+  
+}
