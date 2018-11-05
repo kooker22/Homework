@@ -48,7 +48,7 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: auto;
   
 }
@@ -4028,7 +4028,7 @@ input[type="button"].btn-block {
 @media (min-width: 576px) {
   .navbar-expand-sm {
     -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }

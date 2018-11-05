@@ -4,7 +4,10 @@
 
   box-sizing: border-box;
 }
-
+.container-size {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .top {
   background: url(../img/background.png) no-repeat;
   background-position: center;
@@ -21,14 +24,14 @@ header {
   top: 0;
   right: 0;
   left: 0;
-
+  
   margin: auto;
 }
 .centre {
   text-align: center;
 }
 .logo {
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   color: #ffffff;
   padding-top: 5px;
 }
@@ -45,7 +48,7 @@ header {
   text-shadow: 0 0 3px #bfa022;
 }
 .head-buttons {
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   padding-bottom: 80px;
 }
 button {
@@ -65,17 +68,19 @@ button {
 button::first-letter {
   text-transform: uppercase;
 }
-button,
+button:hover,
 button:active,
 button:focus {
   outline: none;
 }
 button:active {
-  border: 2px solid #ffffff;
-  box-shadow: 0 0 10px 3px #ffffff;
+  color: antiquewhite
+  
+  
 }
 button:hover {
   border: 2px solid #ffffff;
+  box-shadow: 0 0 10px 3px #ffffff;
 }
 section {
   position: absolute;
@@ -88,7 +93,7 @@ section {
 }
 
 .card {
-  max-width: 225px;
+  /* max-width: 225px; */
   max-height: 270px;
   margin-bottom: 1.875rem;
 }
@@ -105,6 +110,7 @@ h1 {
 }
 .partners {
   max-width: 1440px;
+  margin: auto;
 }
 
 .find_partner {
@@ -114,6 +120,7 @@ h1 {
   color: #e7d4c6;
   margin-bottom: 1.25rem;
   text-align: center;
+  
 }
 .search_btn {
   width: 280px;
@@ -128,6 +135,7 @@ h1 {
 .search_btn:focus {
   border: none;
 }
+
 .caption {
   display: block;
   text-align: center;
@@ -196,18 +204,26 @@ h1 {
   background-color: #4e73db;
 }
 .more {
+  
+  left: 0;
+  right: 0;
+  position: absolute;
   border: 2px solid #ff4e50;
   color: #ff4e50;
   height: 40px;
   width: 180px;
+  
   background: #ffffff;
   margin: 20px auto 20px auto;
 }
 .more:active {
-  box-shadow: 0 0 10px 3px #ff4e50;
+  box-shadow: 0 0 5px  #ff4e50;
+  background: pink;
+  color: #ff4e50;
 }
 .more:hover {
   border: 2px solid #ff4e50;
+  box-shadow: 0 0 5px 3px #ff4e50;
 }
 .more::first-letter {
   text-transform: uppercase;
@@ -238,7 +254,6 @@ h1 {
   .top {
     background: url(../img/background_desktop.png) no-repeat;
     background-position: center;
-    height: 700px;
-  }
- 
-}
+    background-size: cover;
+  } 
+} 
