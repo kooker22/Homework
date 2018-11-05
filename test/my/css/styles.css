@@ -1,0 +1,101 @@
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.wrapper {
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.logo {
+    align-items: flex-start;
+    max-width: 13.888%;
+    font-family: atomic;
+    font-weight: 400;
+}
+.logo-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gold;
+    font-family: atomic;
+    font-weight: 400;
+}
+ul,ol {
+    list-style: none;
+}
+.menu {
+display: flex;
+flex-flow: row nowrap ;
+
+color: #ffffff;
+position: relative;
+
+}
+
+.menu-item {
+ height: 30px;
+ width: 150px;
+ background-image:  #aebcbf;
+ background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%);
+ background: -webkit-linear-gradient(top, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);
+ background: linear-gradient(to bottom, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 );
+ text-transform: uppercase;
+ border-left: 1px solid grey;
+ text-align: center;
+ padding-top: 0.6rem;
+}
+
+.menu-item:first-child {
+    border-left: none;
+}
+
+.sub-menu {
+    height: 40px;
+ max-width: 110px;
+ background-image: #aebcbf;
+ background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 43%, #6e7774 43%, #0a0e0a 75%, #0a0e0a 75%, #0a0809 88%, #0a0e0a 98%);
+ background: -webkit-linear-gradient(top, #aebcbf 0%,#6e7774 43%,#6e7774 43%,#0a0e0a 75%,#0a0e0a 75%,#0a0809 88%,#0a0e0a 98%);
+ background: linear-gradient(to bottom, #aebcbf 0%,#6e7774 43%,#6e7774 43%,#0a0e0a 75%,#0a0e0a 75%,#0a0809 88%,#0a0e0a 98%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0e0a',GradientType=0 );
+ position: relative;
+ top: 12px;
+ text-align: left;
+ padding-right: 40px;
+ border: none;
+ display: none;
+ 
+}
+.menu-item:hover .sub-menu {
+display: block;
+}
+.sub-menu-item {
+    height: 40px;
+ width: 100px;
+ background-image: #aebcbf;
+ background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 43%, #6e7774 43%, #0a0e0a 75%, #0a0e0a 75%, #0a0809 88%, #0a0e0a 98%);
+ background: -webkit-linear-gradient(top, #aebcbf 0%,#6e7774 43%,#6e7774 43%,#0a0e0a 75%,#0a0e0a 75%,#0a0809 88%,#0a0e0a 98%);
+ background: linear-gradient(to bottom, #aebcbf 0%,#6e7774 43%,#6e7774 43%,#0a0e0a 75%,#0a0e0a 75%,#0a0809 88%,#0a0e0a 98%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0e0a',GradientType=0 );
+ position: relative;
+ left: 112px;
+ top: -18px;
+ display: none;
+ text-align: center;
+ border: none;
+ 
+}
+.sub-menu:hover .sub-menu-item  {
+    display: block;
+}
+@font-face {
+    font-family: atomic;
+    src: url(../fonts/iceland-v6-latin-regular.woff);
+    font-weight: 400;
+}
