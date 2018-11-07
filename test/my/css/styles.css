@@ -70,13 +70,19 @@ position: relative;
  padding-right: 40px;
  border: none;
  display: none;
- 
+ clip-path: polygon(0 0,100% 0,100% 50%,100% 50%,100% 100%,0 100%);
+}
+.sub-menu:hover {
+    clip-path: polygon(0 0,85% 0,100% 50%,100% 50%,85% 100%,0 100%);
+    transition:   all  ease-out 500ms;
 }
 .menu-item:hover .sub-menu {
 display: block;
+
+
 }
 .sub-menu-item {
-    height: 40px;
+ height: 40px;
  width: 100px;
  background-image: #aebcbf;
  background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 43%, #6e7774 43%, #0a0e0a 75%, #0a0e0a 75%, #0a0809 88%, #0a0e0a 98%);
@@ -84,7 +90,7 @@ display: block;
  background: linear-gradient(to bottom, #aebcbf 0%,#6e7774 43%,#6e7774 43%,#0a0e0a 75%,#0a0e0a 75%,#0a0809 88%,#0a0e0a 98%);
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0e0a',GradientType=0 );
  position: relative;
- left: 112px;
+ left: 97px;
  top: -18px;
  display: none;
  text-align: center;
@@ -92,10 +98,20 @@ display: block;
  
 }
 .sub-menu:hover .sub-menu-item  {
-    display: block;
+    display: block;  
+    transition:   all  ease-out 500ms;
+  clip-path: polygon(0 0,100% 0,100% 100%,0 100%,20% 50%,0 0); 
+
 }
 @font-face {
     font-family: atomic;
     src: url(../fonts/iceland-v6-latin-regular.woff);
     font-weight: 400;
+}
+
+.text {
+    font-size: 300px;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 3px black;
 }

@@ -23,7 +23,8 @@
   width: 100%;
   text-align: center;
   background: url(../img/background.png) no-repeat;
-  background-position: 50% 0px;
+  background-position: center;
+  background-size: cover;
 }
 
 header {
