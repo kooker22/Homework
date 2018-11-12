@@ -1,117 +1,258 @@
 .container {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .wrapper {
-    background: url(../img/background.jpg) no-repeat;
-    background-size: cover;
-    height: 100vh;
+  background: url(../img/background.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 .logo {
-    align-items: flex-start;
-    max-width: 13.888%;
-    font-family: atomic;
-    font-weight: 400;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  max-width: 13.888%;
+  font-family: atomic;
+  font-weight: 400;
 }
 .logo-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: gold;
-    font-family: atomic;
-    font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: gold;
+  font-family: atomic;
+  font-weight: 400;
 }
-ul,ol {
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 .menu {
-display: flex;
-flex-flow: row nowrap ;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
 
-color: #ffffff;
-position: relative;
-
+  color: #ffffff;
+  position: relative;
 }
 
 .menu-item {
- height: 30px;
- width: 150px;
- background-image:  #aebcbf;
- background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%);
- background: -webkit-linear-gradient(top, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);
- background: linear-gradient(to bottom, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 );
- text-transform: uppercase;
- border-left: 1px solid grey;
- text-align: center;
- padding-top: 0.6rem;
+  height: 30px;
+  width: 150px;
+  background-image: #aebcbf;
+  background: -webkit-linear-gradient(
+    top,
+    #aebcbf 0%,
+    #6e7774 50%,
+    #0a0e0a 51%,
+    #0a0809 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#aebcbf),
+    color-stop(50%, #6e7774),
+    color-stop(51%, #0a0e0a),
+    to(#0a0809)
+  );
+  background: -o-linear-gradient(
+    top,
+    #aebcbf 0%,
+    #6e7774 50%,
+    #0a0e0a 51%,
+    #0a0809 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    #aebcbf 0%,
+    #6e7774 50%,
+    #0a0e0a 51%,
+    #0a0809 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 );
+  text-transform: uppercase;
+  border-left: 1px solid grey;
+  text-align: center;
+  padding-top: 0.6rem;
 }
 
 .menu-item:first-child {
-    border-left: none;
+  border-left: none;
 }
 
 .sub-menu {
-    height: 40px;
- max-width: 110px;
- background-image: #aebcbf;
- background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 43%, #6e7774 43%, #0a0e0a 75%, #0a0e0a 75%, #0a0809 88%, #0a0e0a 98%);
- background: -webkit-linear-gradient(top, #aebcbf 0%,#6e7774 43%,#6e7774 43%,#0a0e0a 75%,#0a0e0a 75%,#0a0809 88%,#0a0e0a 98%);
- background: linear-gradient(to bottom, #aebcbf 0%,#6e7774 43%,#6e7774 43%,#0a0e0a 75%,#0a0e0a 75%,#0a0809 88%,#0a0e0a 98%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0e0a',GradientType=0 );
- position: relative;
- top: 12px;
- text-align: left;
- padding-right: 40px;
- border: none;
- display: none;
- clip-path: polygon(0 0,100% 0,100% 50%,100% 50%,100% 100%,0 100%);
+  height: 40px;
+  max-width: 110px;
+  background-image: #aebcbf;
+  background: -webkit-linear-gradient(
+    top,
+    #aebcbf 0%,
+    #6e7774 43%,
+    #6e7774 43%,
+    #0a0e0a 75%,
+    #0a0e0a 75%,
+    #0a0809 88%,
+    #0a0e0a 98%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#aebcbf),
+    color-stop(43%, #6e7774),
+    color-stop(43%, #6e7774),
+    color-stop(75%, #0a0e0a),
+    color-stop(75%, #0a0e0a),
+    color-stop(88%, #0a0809),
+    color-stop(98%, #0a0e0a)
+  );
+  background: -o-linear-gradient(
+    top,
+    #aebcbf 0%,
+    #6e7774 43%,
+    #6e7774 43%,
+    #0a0e0a 75%,
+    #0a0e0a 75%,
+    #0a0809 88%,
+    #0a0e0a 98%
+  );
+  background: linear-gradient(
+    to bottom,
+    #aebcbf 0%,
+    #6e7774 43%,
+    #6e7774 43%,
+    #0a0e0a 75%,
+    #0a0e0a 75%,
+    #0a0809 88%,
+    #0a0e0a 98%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0e0a',GradientType=0 );
+  position: relative;
+  top: 12px;
+  text-align: left;
+  padding-right: 40px;
+  border: none;
+  display: none;
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 50%,
+    100% 50%,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%, 100% 100%, 0 100%);
 }
 .sub-menu:hover {
-    clip-path: polygon(0 0,85% 0,100% 50%,100% 50%,85% 100%,0 100%);
-    transition:   all  ease-out 500ms;
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 50%, 100% 50%, 85% 100%, 0 100%);
+  clip-path: polygon(0 0, 85% 0, 100% 50%, 100% 50%, 85% 100%, 0 100%);
+  -webkit-transition: all ease-out 500ms;
+  -o-transition: all ease-out 500ms;
+  transition: all ease-out 500ms;
 }
 .menu-item:hover .sub-menu {
-display: block;
-
-
+  display: block;
 }
 .sub-menu-item {
- height: 40px;
- width: 100px;
- background-image: #aebcbf;
- background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 43%, #6e7774 43%, #0a0e0a 75%, #0a0e0a 75%, #0a0809 88%, #0a0e0a 98%);
- background: -webkit-linear-gradient(top, #aebcbf 0%,#6e7774 43%,#6e7774 43%,#0a0e0a 75%,#0a0e0a 75%,#0a0809 88%,#0a0e0a 98%);
- background: linear-gradient(to bottom, #aebcbf 0%,#6e7774 43%,#6e7774 43%,#0a0e0a 75%,#0a0e0a 75%,#0a0809 88%,#0a0e0a 98%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0e0a',GradientType=0 );
- position: relative;
- left: 97px;
- top: -18px;
- display: none;
- text-align: center;
- border: none;
- 
+  height: 40px;
+  width: 100px;
+  background-image: #aebcbf;
+  background: -webkit-linear-gradient(
+    top,
+    #aebcbf 0%,
+    #6e7774 43%,
+    #6e7774 43%,
+    #0a0e0a 75%,
+    #0a0e0a 75%,
+    #0a0809 88%,
+    #0a0e0a 98%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#aebcbf),
+    color-stop(43%, #6e7774),
+    color-stop(43%, #6e7774),
+    color-stop(75%, #0a0e0a),
+    color-stop(75%, #0a0e0a),
+    color-stop(88%, #0a0809),
+    color-stop(98%, #0a0e0a)
+  );
+  background: -o-linear-gradient(
+    top,
+    #aebcbf 0%,
+    #6e7774 43%,
+    #6e7774 43%,
+    #0a0e0a 75%,
+    #0a0e0a 75%,
+    #0a0809 88%,
+    #0a0e0a 98%
+  );
+  background: linear-gradient(
+    to bottom,
+    #aebcbf 0%,
+    #6e7774 43%,
+    #6e7774 43%,
+    #0a0e0a 75%,
+    #0a0e0a 75%,
+    #0a0809 88%,
+    #0a0e0a 98%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0e0a',GradientType=0 );
+  position: relative;
+  left: 97px;
+  top: -18px;
+  display: none;
+  text-align: center;
+  border: none;
 }
-.sub-menu:hover .sub-menu-item  {
-    display: block;  
-    transition:   all  ease-out 500ms;
-  clip-path: polygon(0 0,100% 0,100% 100%,0 100%,20% 50%,0 0); 
-
+.sub-menu:hover .sub-menu-item {
+  display: block;
+  -webkit-transition: all ease-out 500ms;
+  -o-transition: all ease-out 500ms;
+  transition: all ease-out 500ms;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%, 0 0);
 }
 @font-face {
-    font-family: atomic;
-    src: url(../fonts/iceland-v6-latin-regular.woff);
-    font-weight: 400;
+  font-family: atomic;
+  src: url(../fonts/iceland-v6-latin-regular.woff);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 320px;
+
+  color: rgba(67, 201, 117, 0.2);
+
+  text-shadow: 10px 10px 2px rgba(0, 0, 0, 0.2);
+
+  -webkit-text-stroke: 10px #080c0b;
+
+  background: url(../img/10945690.jpg) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .text {
-    font-size: 300px;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-stroke: 3px black;
+  background: url(../img/10945690.jpg);
+}
+h2 {
+  color: transparent;
+  -webkit-text-stroke: 10px black;
+  font-size: 180px;
 }

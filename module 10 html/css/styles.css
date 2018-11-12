@@ -11,6 +11,11 @@
   background-size: cover;
   background-position: center;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .top {
+    background: url(../img/background@2x.png) no-repeat;
+  }
+}
 header {
   padding-top: 2rem;
   display: -webkit-box;
@@ -81,13 +86,13 @@ a {
 #svg {
   display: none;
 }
-.svg-head {
+.svg-menu-link {
   fill: #ffffff;
   padding-top: 3px;
   width: 18px;
   height: 21px;
 }
-.svg-head:hover {
+.svg-menu-link:hover {
   fill: #fce38a;
 }
 #svg-card {
@@ -101,7 +106,7 @@ a {
   background: #fce38a;
   padding: 16px;
 }
-.fb-padding {
+.fb-position {
   padding-left: 23px;
 }
 .svg-card:hover {
@@ -188,31 +193,30 @@ nav {
   flex-direction: row;
   padding-bottom: 5.625rem;
 }
-.bottom_flx {
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-}
+
 .card {
   position: relative;
   height: auto;
   width: 383px;
   line-height: 25px;
   min-height: 123px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 .card-title {
   position: absolute;
-  text-align: left;
   top: 0;
   left: 83px;
   font-family: montserrat;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
 }
 .card-description {
   position: absolute;
   height: 56px;
   width: 300px;
-  text-align: left;
+  
   top: 33px;
   left: 83px;
   font-family: roboto;
@@ -228,7 +232,7 @@ nav {
   background: #f38181;
   margin: 46px auto 0 auto;
 }
-.txt {
+.text {
   padding-top: 50px;
   text-align: center;
   font-family: roboto;
@@ -423,10 +427,4 @@ figcaption {
   font-family: montserrat;
   src: url(../fonts/montserrat/montserrat-regular.ttf);
   font-weight: 400;
-}
-.text {
-  font-size: 300px;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-stroke: 3px black;
 }
