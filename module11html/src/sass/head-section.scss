@@ -3,123 +3,136 @@
     background: url(../images/background.png) no-repeat;
     background-size: cover;
     background-position: center;
-  }
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
     .head-section {
-      background: url(../images/background@2x-min.png) no-repeat;
+        background: url(../images/background@2x-min.png) no-repeat;
     }
-  }
-  header {
+}
+
+header {
     padding-top: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
-  }
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  .menu {
+}
+
+.menu {
     display: flex;
     flex-wrap: nowrap;
     padding-top: 0.937rem;
     justify-content: space-between;
     min-width: 600px;
     padding-bottom: 6em;
-    
-  }
-  .menu--header {
+}
+
+.menu--header {
     text-transform: uppercase;
-    font-family: montserrat;
+    font-family: $main-font;
     font-weight: 400;
     font-size: 0.875rem;
     list-style: none;
-  }
-  .menu > ul {
+}
+
+.menu>ul {
     max-height: 20px;
-  }
-  .logo {
+}
+
+.logo {
     display: inline-block;
-   
-  }
-  .logo--decoration {
-    font-family: montserrat;
+}
+
+.logo--decoration {
+    font-family: $main-font;
     font-weight: 900;
     font-size: 30px;
-  }
-  .logo__link {
-    color: #ffffff;
-  }
-  .menu__item::after {
+}
+
+.logo__link {
+    color: $main-color;
+}
+
+.menu__item::after {
     content: "";
     display: block;
     width: 0%;
     height: 3px;
-    background: #fce38a;
+    background: $main-hover-color;
     margin: 13px auto;
     transition: width 200ms;
-  }
-  
-  .menu__item:hover::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: #fce38a;
-    margin: 13px auto;
-    color: #fce38a;
-    transition: width 200ms linear;
-  }
-  #svg {
+    &:hover::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: $main-hover-color;
+        margin: 13px auto;
+        color: $main-hover-color;
+        transition: width 200ms linear;
+    }
+}
+
+#svg {
     display: none;
-  }
-  .menu__svg-link {
-    fill: #ffffff;
+}
+
+.menu__svg-link {
+    fill: $main-color;
     padding-top: 3px;
     width: 18px;
     height: 21px;
-  }
-  .menu__svg-link:hover {
-    fill: #fce38a;
-  }
-  .menu__link {
-    color: #ffffff;
-  }
-  .menu__link:hover {
-    color: #fce38a;
-  }
-  .caption-top { 
+    &:hover {
+        fill: $main-hover-color;
+    }
+}
+
+.menu__link {
+    color: $main-color;
+    &:hover {
+        color: $main-hover-color;
+    }
+}
+
+.caption-top {
     text-align: center;
-  }
-  .caption-top__sub-title {
-    font-family: kaushan;
+}
+
+.caption-top__sub-title {
+    font-family: $supportive-font;
     font-weight: 400;
     font-size: 4.5rem;
-    color: #ffffff;
+    color: $main-color;
     margin-bottom: 0.5em;
-  }
-  .caption-top__title {
-    font-family: montserrat;
+}
+
+.caption-top__title {
+    font-family: $main-font;
     font-weight: 900;
     font-size: 9.375rem;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $main-color;
     padding-bottom: 0.8em;
     margin: 0;
-  
-  }
-  .caption-top__button {
-    color: #ffffff;
-    font-family: montserrat;
+}
+
+.caption-top__button {
+    color: $main-color;
+    font-family: $main-font;
     font-weight: 900;
     font-size: 0.875rem;
     width: 8.75em;
     height: 2.5em;
-    border: 3px solid #ffffff;
+    border: 3px solid $main-color;
     background: none;
     text-transform: uppercase;
-  }
-  .caption-top__button:hover {
-    border: none;
-    font-size: 1.1em;
-  }
+    &:hover {
+        border: none;
+        font-size: 1.1em;
+    }

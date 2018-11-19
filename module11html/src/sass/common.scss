@@ -16,18 +16,20 @@ a {
 #svg {
     display: none;
 }
+
 input:active,
 input:focus,
 button:hover,
 button:active,
 button:focus {
-  outline: none;
+    outline: none;
 }
+
 .bar::after {
     content: "";
     display: block;
     height: 3px;
     width: 60px;
-    background: #f38181;
+    background: $supportive-color;
     margin: 46px auto 0 auto;
-  }
+}

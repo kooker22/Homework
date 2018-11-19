@@ -1,9 +1,9 @@
 .text {
     padding-top: 50px;
     text-align: center;
-    font-family: roboto;
+    font-family: $secondary-font;
     font-weight: 400;
-    color: #999999;
+    color: $text-color;
     line-height: 25px;
     font-size: 15px;
-  }
+}

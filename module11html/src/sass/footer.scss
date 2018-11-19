@@ -1,84 +1,79 @@
 footer {
     height: 65px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-  figcaption {
+}
+
+figcaption {
     padding-top: 30px;
-  }
-  
-  
-  .form {
-    display: -webkit-box;
-    display: -ms-flexbox;
+}
+
+.form {
     display: flex;
     width: 380px;
-    -ms-flex-item-align: center;
     align-self: center;
     opacity: 0.9;
-  }
-  .txt-area {
+}
+
+.txt-area {
     width: 230px;
     height: 38px;
-    font-family: roboto;
+    font-family: $secondary-font;
     font-weight: 200;
     font-size: 1rem;
     border-width: 1px;
-    border-color: #e7e7e7;
-  }
-  .btn {
+    border-color: $main-color;
+}
+
+.btn {
     height: 38px;
     width: 150px;
     background: #95e1d3;
     border-color: #95e1d3;
-    font-family: montserrat;
+    font-family: $main-font;
     font-weight: 900;
     font-size: 1.1em;
     text-transform: uppercase;
-    color: #d7f4ee;
+    color: $main-color;
     border: none;
     transition: background 500ms;
-  }
-  .btn:hover {
-    background: #f38181;
-    transition: background 500ms;
-  }
-  .wrapper {
+    &:hover {
+        background: #f38181;
+        transition: background 500ms;
+    }
+}
+
+.wrapper {
     width: 637px;
     width: 380px;
     padding-bottom: 83px;
     margin: 0;
-  }
-  .color {
+}
+
+.color {
     color: #f6a1a1;
-  }
-  .ftr-autor {
+}
+
+.ftr-autor {
     text-align: center;
     line-height: 100%;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
     align-self: center;
-    font-family: montserrat;
+    font-family: $main-font;
     font-weight: 400;
     font-size: 14px;
     color: #595959;
-  }
-  .ftr-autor::before {
+}
+
+.ftr-autor::before {
     content: "\00A9";
-  }
-  ::-webkit-input-placeholder {
+}
+
+::-webkit-input-placeholder {
     color: #d6d6d6;
     font-size: 15px;
-    font-family: roboto;
+    font-family: $secondary-font;
     font-weight: 200;
     font-style: oblique;
     padding-left: 10px;
-  }
+}

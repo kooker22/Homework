@@ -1,20 +1,14 @@
 nav {
     height: 300px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: wrap;
     flex-flow: wrap;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     padding-bottom: 5.625rem;
-  }
-  
-  .card {
+}
+
+.card {
     position: relative;
     height: auto;
     width: 383px;
@@ -22,26 +16,29 @@ nav {
     min-height: 123px;
     margin-bottom: 20px;
     text-align: left;
-  }
-  .card__title {
+}
+
+.card__title {
     position: absolute;
     top: 0;
     left: 83px;
-    font-family: montserrat;
+    font-family: $main-font;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
-  }
-  .card__description {
+}
+
+.card__description {
     position: absolute;
     width: 300px;
     top: 33px;
     left: 83px;
-    font-family: roboto;
+    font-family: $secondary-font;
     font-weight: 400;
     font-size: 15px;
-    color: #999999;
-  }
-  .wrap {
+    color: $text-color;
+}
+
+.wrap {
     margin-bottom: 50px;
-  }
+}
