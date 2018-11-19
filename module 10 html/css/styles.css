@@ -10,14 +10,14 @@
 .wrap {
   margin-bottom: 50px;
 }
-.top {
+.head-section {
   height: 100vh;
   background: url(../img/background.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .top {
+  .head-section {
     background: url(../img/background@2x.png) no-repeat;
   }
 }
@@ -33,7 +33,7 @@ header {
 a {
   text-decoration: none;
 }
-.menu-header {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,29 +43,33 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  list-style: none;
-  font-family: montserrat;
-  font-weight: 400;
   min-width: 600px;
   padding-bottom: 6em;
+  
+}
+.menu--header {
   text-transform: uppercase;
   font-family: montserrat;
   font-weight: 400;
   font-size: 0.875rem;
+  list-style: none;
 }
-.menu-header > ul {
+.menu > ul {
   max-height: 20px;
 }
 .logo {
   display: inline-block;
+ 
+}
+.logo--decoration {
   font-family: montserrat;
   font-weight: 900;
   font-size: 30px;
 }
-.logo-link {
+.logo__link {
   color: #ffffff;
 }
-.menu-item::after {
+.menu__item::after {
   content: "";
   display: block;
   width: 0%;
@@ -76,7 +80,8 @@ a {
   -o-transition: width 200ms;
   transition: width 200ms;
 }
-.menu-item:hover::after {
+
+.menu__item:hover::after {
   content: "";
   display: block;
   width: 100%;
@@ -91,51 +96,49 @@ a {
 #svg {
   display: none;
 }
-.svg-menu-link {
+.menu__svg-link {
   fill: #ffffff;
   padding-top: 3px;
   width: 18px;
   height: 21px;
 }
-.svg-menu-link:hover {
+.menu__svg-link:hover {
   fill: #fce38a;
 }
-#svg-card {
+#team-card-inner__icon {
   display: none;
 }
-.svg-card {
-  fill: #f38181;
+.team-card-inner__icon {
+  
   width: 57px;
   height: 57px;
-  opacity: 1;
-  background: #fce38a;
   padding: 16px;
 }
-.fb-position {
-  padding-left: 23px;
+.team-card-inner__icon--color {
+  fill: #f38181;
+  background: #fce38a;
 }
-.svg-card:hover {
+.team-card-inner__icon:hover {
   fill: #ffffff;
   background: #f38181;
 }
-.menu-link {
+.menu__link {
   color: #ffffff;
 }
-.menu-link:hover {
+.menu__link:hover {
   color: #fce38a;
 }
-.caption-top {
-  
+.caption-top { 
   text-align: center;
 }
-.sub-title-top {
+.caption-top__sub-title {
   font-family: kaushan;
   font-weight: 400;
   font-size: 4.5rem;
   color: #ffffff;
- margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
-.title-top {
+.caption-top__title {
   font-family: montserrat;
   font-weight: 900;
   font-size: 9.375rem;
@@ -145,7 +148,7 @@ a {
   margin: 0;
 
 }
-.button-top {
+.caption-top__button {
   color: #ffffff;
   font-family: montserrat;
   font-weight: 900;
@@ -156,7 +159,7 @@ a {
   background: none;
   text-transform: uppercase;
 }
-.button-top:hover {
+.caption-top__button:hover {
   border: none;
   font-size: 1.1em;
 }
@@ -167,14 +170,14 @@ button:active,
 button:focus {
   outline: none;
 }
-.sub-title-bottom {
+.caption-bottom__sub-title {
   font-family: kaushan;
   font-weight: 400;
   font-size: 24px;
   color: #333333;
   text-align: center;
 }
-.title-bottom {
+.caption-bottom__title {
   font-family: monsterrat;
   font-size: 30px;
   text-transform: uppercase;
@@ -210,7 +213,7 @@ nav {
   margin-bottom: 20px;
   text-align: left;
 }
-.card-title {
+.card__title {
   position: absolute;
   top: 0;
   left: 83px;
@@ -219,7 +222,7 @@ nav {
   text-transform: uppercase;
   margin: 0;
 }
-.card-description {
+.card__description {
   position: absolute;
   width: 300px;
   top: 33px;
@@ -259,13 +262,13 @@ nav {
   justify-content: space-between;
   padding-top: 120px;
 }
-.card2 {
+.team-card {
   position: relative;
   opacity: 1;
   width: 380px;
   height: 470px;
 }
-.card2-inner {
+.team-card-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,7 +299,7 @@ nav {
   background: -o-linear-gradient(#ef8b8a, #f2d787);
   background: linear-gradient(#ef8b8a, #f2d787);
 }
-.card2:hover .card2-inner {
+.team-card:hover .team-card-inner {
   -webkit-transition-property: #f2d787;
   -o-transition-property: #f2d787;
   transition-property: #f2d787;
@@ -343,7 +346,7 @@ figcaption {
   padding-top: 30px;
 }
 
-}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,7 +388,7 @@ figcaption {
   padding-bottom: 83px;
   margin: 0;
 }
-.col {
+.color {
   color: #f6a1a1;
 }
 .ftr-autor {
