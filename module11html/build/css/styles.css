@@ -473,7 +473,7 @@ a {
   transition: width 200ms;
 }
 
-.menu__item:hover::after {
+.menu__item::after:hover::after {
   content: "";
   display: block;
   width: 100%;
@@ -788,7 +788,6 @@ figcaption {
 .ftr-autor {
   text-align: center;
   line-height: 100%;
-  -ms-grid-row-align: center;
   align-self: center;
   font-family: montserrat;
   font-weight: 400;

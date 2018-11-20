@@ -1,0 +1,36 @@
+.container {
+
+}
+.head-section {
+    background: radial-gradient(circle at center, #09213a, #161d2a),no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 479px;
+    height: 100vh;
+    position: relative;
+    padding-top: 10px;
+}
+.background-goit {
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+header {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    background: url(../images/burg_menu.png) no-repeat;
+    width: 17px;
+    height: 12px;
+    &:hover {
+       opacity: 0.7;
+    }
+}
+.caption {
+    
+}
